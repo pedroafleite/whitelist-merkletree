@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "@openzeppelin/contracts@4.4.1/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts@4.4.1/utils/Counters.sol";
 
-contract MerkleTreeExample is ERC721 {
+contract MerkleTree is ERC721 {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
 
