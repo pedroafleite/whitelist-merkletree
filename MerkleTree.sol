@@ -14,7 +14,7 @@ contract MerkleTree is ERC721 {
 
     mapping(address => bool) public whitelistClaimed;
 
-    constructor() ERC721("GameItem", "ITM") {}
+    constructor() ERC721("MyNFT", "NFT") {}
 
     function whitelistMint(bytes32[] calldata _merkleProof) public {
         require(!whitelistClaimed[msg.sender], "Address already claimed");
